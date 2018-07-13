@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MyNotes</string>
+
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="add">ADD</string>
+    <string name="delete">DELETE</string>
+    <string name="show">SHOW</string>
+    <string name="update">UPDATE</string>
+    <string name="welcome_to_mynotes">Welcome to MYNotes</string>
+
+    <string name="saved_notes">Saved Notes</string>
+    <string name="enter_title">Enter Title</string>
+    <string name="save">SAVE</string>
+    <string name="enter_content">Enter Content</string>
+</resources>
