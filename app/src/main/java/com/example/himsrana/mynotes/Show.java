@@ -60,7 +60,7 @@ public class Show extends AppCompatActivity {
 
   }
         else
-        Toast.makeText(getApplicationContext(),"Noting To Show",Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(),"Add yout First Note",Toast.LENGTH_SHORT).show();
 
 
 
@@ -68,7 +68,7 @@ public class Show extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
-                Intent intent = new Intent(getApplicationContext(),Show2.class);
+                Intent intent = new Intent(Show.this,Show2.class);
                 intent.putExtra("Title", titleList.get(i));
                 intent.putExtra("Content", contentList.get(i));
 

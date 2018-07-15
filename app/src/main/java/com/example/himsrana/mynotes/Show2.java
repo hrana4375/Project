@@ -1,6 +1,8 @@
 package com.example.himsrana.mynotes;
 
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -36,10 +38,28 @@ public class Show2 extends AppCompatActivity {
         delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                dataBase.onDelete(title2.getText().toString());
-                Intent intent = new Intent(getApplicationContext(),Show.class);
-                Toast.makeText(getApplicationContext(),"Deleted Successfully",Toast.LENGTH_SHORT).show();
-                startActivity(intent);
+                AlertDialog.Builder alertDialog = new AlertDialog.Builder(Show2.this);
+                alertDialog.setMessage("Do you want to delete this Note")
+                .setCancelable(false)
+                .setPositiveButton("YES", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        finish();
+                        dataBase.onDelete(title2.getText().toString());
+                        Intent intent = new Intent(Show2.this,Show.class);
+                        Toast.makeText(getApplicationContext(),"Deleted Successfully",Toast.LENGTH_SHORT).show();
+                        startActivity(intent);
+                    }
+                })
+                .setNegativeButton("NO", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        dialogInterface.cancel();
+                    }
+                });
+                AlertDialog alertDialog1 = alertDialog.create();
+                alertDialog1.setTitle("DELETE!!!!");
+                alertDialog1.show();
 
             }
         });
@@ -49,7 +69,7 @@ public class Show2 extends AppCompatActivity {
             public void onClick(View view) {
 
                 dataBase.onUpdate(title2.getText().toString(),content2.getText().toString());
-                Intent intent = new Intent(getApplicationContext(),Show.class);
+                Intent intent = new Intent(Show2.this,Show.class);
                 Toast.makeText(Show2.this, "Note Updated", Toast.LENGTH_SHORT).show();
                 startActivity(intent);
 

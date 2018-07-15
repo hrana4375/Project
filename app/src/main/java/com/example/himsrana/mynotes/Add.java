@@ -22,13 +22,15 @@ public class Add extends AppCompatActivity {
         title = findViewById(R.id.title);
         content = findViewById(R.id.content);
         save = findViewById(R.id.save);
+        final String str = null;
+
 
         final DataBase dataBase = new DataBase(getApplicationContext());
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                if(title.getText().toString().equals(null))
+                if((title.getText().toString()).equals(str))
                 {
                     Toast.makeText(Add.this, "Empty Note", Toast.LENGTH_SHORT).show();
                 }

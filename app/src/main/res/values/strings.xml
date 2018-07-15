@@ -14,4 +14,9 @@
     <string name="enter_title">Enter Title</string>
     <string name="save">SAVE</string>
     <string name="enter_content">Enter Content</string>
+    <string name="enter_title_here">Enter Title here</string>
+    <string name="enter_content_here">Enter Content here</string>
+    <string name="save2">Save</string>
+    <string name="save3">Save</string>
+    <string name="delete2">Delete</string>
 </resources>

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/crop"
     tools:context=".Show2">
 
     <EditText
@@ -40,15 +41,15 @@
 
     <Button
         android:id="@+id/save2"
-        android:layout_width="144dp"
-        android:layout_height="45dp"
+        android:layout_width="62dp"
+        android:layout_height="66dp"
         android:layout_marginBottom="50dp"
-        android:layout_marginEnd="43dp"
-        android:layout_marginLeft="34dp"
-        android:layout_marginRight="43dp"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="294dp"
-        android:text="Save"
+        android:layout_marginEnd="59dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="59dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="273dp"
+        android:background="@android:drawable/ic_menu_save"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/delete2"
         app:layout_constraintStart_toStartOf="parent"
@@ -56,16 +57,15 @@
 
     <Button
         android:id="@+id/delete2"
-        android:layout_width="134dp"
-        android:layout_height="wrap_content"
+        android:layout_width="69dp"
+        android:layout_height="68dp"
         android:layout_marginBottom="48dp"
-        android:layout_marginEnd="29dp"
-        android:layout_marginRight="29dp"
-        android:layout_marginTop="293dp"
-        android:text="Delete"
+        android:layout_marginEnd="94dp"
+        android:layout_marginRight="94dp"
+        android:layout_marginTop="273dp"
+        android:background="@android:drawable/ic_menu_delete"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/save2"
         app:layout_constraintTop_toBottomOf="@+id/content2" />
 
 </android.support.constraint.ConstraintLayout>
