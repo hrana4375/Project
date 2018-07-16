@@ -41,14 +41,14 @@
 
     <Button
         android:id="@+id/save2"
-        android:layout_width="62dp"
-        android:layout_height="66dp"
+        android:layout_width="47dp"
+        android:layout_height="55dp"
         android:layout_marginBottom="50dp"
-        android:layout_marginEnd="59dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginRight="59dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="273dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginLeft="136dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="284dp"
         android:background="@android:drawable/ic_menu_save"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/delete2"
@@ -57,15 +57,18 @@
 
     <Button
         android:id="@+id/delete2"
-        android:layout_width="69dp"
-        android:layout_height="68dp"
-        android:layout_marginBottom="48dp"
-        android:layout_marginEnd="94dp"
-        android:layout_marginRight="94dp"
-        android:layout_marginTop="273dp"
+        android:layout_width="52dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="136dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="284dp"
         android:background="@android:drawable/ic_menu_delete"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/save2"
         app:layout_constraintTop_toBottomOf="@+id/content2" />
 
 </android.support.constraint.ConstraintLayout>

@@ -46,12 +46,12 @@ public class Show extends AppCompatActivity {
 
             }while(cursor.moveToNext());
 
-            //changed code
+
             ArrayList<String> finalData = new ArrayList<>();
 
             for(int i=0; i<titleList.size(); i++){
 
-                finalData.add(titleList.get(i) + "\n" + contentList.get(i));
+                finalData.add(titleList.get(i) + "\n----------------------------------------------------------------------------------\n" + contentList.get(i));
 
             }
 
