@@ -51,7 +51,7 @@ public class Show extends AppCompatActivity {
 
             for(int i=0; i<titleList.size(); i++){
 
-                finalData.add(titleList.get(i) + "\n----------------------------------------------------------------------------------\n" + contentList.get(i));
+                finalData.add(titleList.get(i) + "\n\n" + contentList.get(i));
 
             }
 

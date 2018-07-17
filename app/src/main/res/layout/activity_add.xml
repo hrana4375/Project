@@ -29,6 +29,7 @@
 
     <EditText
         android:id="@+id/content"
+
         android:layout_width="357dp"
         android:layout_height="53dp"
         android:layout_marginEnd="11dp"
@@ -38,7 +39,13 @@
         android:layout_marginTop="14dp"
         android:ems="10"
         android:hint="@string/enter_content_here"
-        android:inputType="textLongMessage|textPersonName"
+        android:inputType="textMultiLine"
+        android:lines="10"
+        android:minLines="5"
+
+        android:scrollHorizontally="false"
+        android:scrollbars="vertical"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
